@@ -1,5 +1,0 @@
-date, CompanyId, BusId, CompleteTripCount, IncompleteTripCount, CancelledTripCount, TotalCharges
-16-05-2023,Company1,Bus10,1,0,0,4.5
-16-05-2023,Company1,Bus25,0,1,0,6.25
-16-05-2023,Company2,Bus11,1,0,0,6.25
-16-05-2023,Company3,Bus12,0,0,1,0.0
