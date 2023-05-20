@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: travel-system
+  security:
+    filter:
+      dispatcher-types: REQUEST,ERROR
+debug: true
+
+logging:
+  level:
+    org:
+      springframework:
+        boot:
+          autoconfigure: error

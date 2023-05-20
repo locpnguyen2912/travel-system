@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: travel-system
+  profiles:
+    active: dev
+debug: true
+
+logging:
+  level:
+    org:
+      springframework:
+        boot:
+          autoconfigure: error
