@@ -8,7 +8,7 @@ This Travel System via REST APIs allowing you to process and create trips from t
 
 ## Features implemented
 * Travel System operations supported
-  - allow user to upload their touch data csv file
+  - allow the user to upload own touch data CSV file
   - process and create trips base on touch data input
   - export 3 files trips.csv, unprocessableTouchData.csv, summary.csv in zip file
 * Unit test  
