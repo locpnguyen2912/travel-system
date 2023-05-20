@@ -24,7 +24,7 @@ This Travel System via REST APIs allowing you to process and create trips from t
   --form 'file=@"path-of-your-file"'``
   
 ### Test data: 
-* tmp/touchData.csv
+* src/test/resources/test-data/touchData.csv
 
 ### Build and Run
 ```
