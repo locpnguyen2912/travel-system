@@ -1,5 +1,5 @@
 # Travel System 
-This Travel System via REST APIs allowing you to process and create trips from touchData.csv and then export them as 3 files trips.csv, unprocessableTouchData.csv, and summary.csv in a zip file
+This Travel System via REST API allow user to process and create trips from touchData.csv and then export them as 3 files trips.csv, unprocessableTouchData.csv, and summary.csv in a zip file
 
 ## Assumption
 * When creating trips from touch data, we identify unprocessed trips base on PAN number (missing, invalid data) then mark in reason column. 
