@@ -11,10 +11,10 @@ public interface FileService {
 
     List<TouchRecord> readTouchRecords(MultipartFile inputFile);
 
-    Boolean writeTripsFile(Map<String, TripSummary> tripSummaries, String filePath);
+    void writeTripsFile(Map<String, TripSummary> tripSummaries, String filePath);
 
-    Boolean writeUnprocessableTouchDataFile( Map<String, TripSummary> unprocessedTrips, String filePath);
+    void writeUnprocessableTouchDataFile( Map<String, TripSummary> unprocessedTrips, String filePath);
 
-    Boolean writeSummaryFile(Map<String, TripSummary> tripSummaries, String filePath);
+    void writeSummaryFile(Map<String, TripSummary> tripSummaries, String filePath);
 
 }

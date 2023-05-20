@@ -35,6 +35,7 @@ import java.util.Map;
 import static com.exercise.travel.config.Constants.TEMP_PATH;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.when;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
@@ -79,15 +80,15 @@ public class TripControllerTest {
 
         // Mock fileService.writeTripsFile
         Path tripsFilePath = Paths.get(TEMP_PATH + "trips.csv");
-        when(fileService.writeTripsFile(processedTrips, tripsFilePath.toString())).thenReturn(true);
+        doNothing().when(fileService).writeTripsFile(processedTrips, tripsFilePath.toString());
 
         // Mock fileService.writeUnprocessableTouchDataFile
         Path unprocessableFilePath = Paths.get(TEMP_PATH + "unprocessableTouchData.csv");
-        when(fileService.writeUnprocessableTouchDataFile(unprocessedTrips, unprocessableFilePath.toString())).thenReturn(true);
+        doNothing().when(fileService).writeUnprocessableTouchDataFile(unprocessedTrips, unprocessableFilePath.toString());
 
         // Mock fileService.writeSummaryFile
         Path summaryFilePath = Paths.get(TEMP_PATH + "summary.csv");
-        when(fileService.writeSummaryFile(processedTrips, summaryFilePath.toString())).thenReturn(true);
+        doNothing().when(fileService).writeSummaryFile(processedTrips, summaryFilePath.toString());
 
         // Mock response
         MockHttpServletResponse response = new MockHttpServletResponse();

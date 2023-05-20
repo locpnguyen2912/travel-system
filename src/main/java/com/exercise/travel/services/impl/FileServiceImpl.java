@@ -66,7 +66,7 @@ public class FileServiceImpl implements FileService {
     }
 
     @Override
-    public Boolean writeTripsFile(Map<String, TripSummary> tripSummaries, String filePath) {
+    public void writeTripsFile(Map<String, TripSummary> tripSummaries, String filePath) {
         try {
             FileWriter writer = new FileWriter(filePath);
             writer.write("started, finished, DurationSec, fromStopId, toStopId, ChargeAmount, CompanyId, BusId, HashedPan, Status\n");
@@ -78,11 +78,10 @@ public class FileServiceImpl implements FileService {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return true;
     }
 
     @Override
-    public Boolean writeUnprocessableTouchDataFile(Map<String, TripSummary> unprocessedTrips, String filePath) {
+    public void writeUnprocessableTouchDataFile(Map<String, TripSummary> unprocessedTrips, String filePath) {
         try {
             FileWriter writer = new FileWriter(filePath);
             writer.write("started, finished, DurationSec, fromStopId, toStopId, ChargeAmount, CompanyId, BusId, HashedPan, Status\n");
@@ -94,11 +93,10 @@ public class FileServiceImpl implements FileService {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return true;
     }
 
     @Override
-    public Boolean writeSummaryFile(Map<String, TripSummary> tripSummaries, String filePath) {
+    public void writeSummaryFile(Map<String, TripSummary> tripSummaries, String filePath) {
         try {
             FileWriter writer = new FileWriter(filePath);
             writer.write("date, CompanyId, BusId, CompleteTripCount, IncompleteTripCount, CancelledTripCount, TotalCharges\n");
@@ -121,7 +119,6 @@ public class FileServiceImpl implements FileService {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return true;
     }
 
     private File convertToFile(MultipartFile multipartFile) {

@@ -4,7 +4,6 @@ import com.exercise.travel.dto.TouchRecord;
 import com.exercise.travel.dto.TripSummary;
 import com.exercise.travel.services.FileService;
 import com.exercise.travel.services.TripService;
-import com.exercise.travel.util.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
