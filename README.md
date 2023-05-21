@@ -34,27 +34,26 @@ mvn spring-boot:run
 ```
 
 ## Testing
-Input touchData.csv include list of records following scenario:
+Input touchData.csv contain list of touch records following the scenario:
 - 2 completed trips
-- 1 incompleted trip
+- 1 incomplete trip
 - 1 cancelled trip
 - 4 unprocessed trips (missing pan, invalid pan)
 
-![image](https://github.com/locpnguyen2912/travel-system/assets/6479274/6b056e0b-b6f6-4939-9c3f-d8763f6926ff)
+![img.png](img.png)
 
 ## Result:
 
 #### trips.csv
 
-![image](https://github.com/locpnguyen2912/travel-system/assets/6479274/1641465b-ecc9-4a28-a037-b242dd8cdf40)
-
+![img_1.png](img_1.png)
 #### unprocessableTouchData.csv
 
-![image](https://github.com/locpnguyen2912/travel-system/assets/6479274/ebac4670-b9e4-4ee0-bebc-11730cb3cc35)
+![img_2.png](img_2.png)
 
 #### summary.csv
 
-![image](https://github.com/locpnguyen2912/travel-system/assets/6479274/47ca490d-e7b3-420d-8ac3-206816a93395)
+![img_3.png](img_3.png)
 
 
 
